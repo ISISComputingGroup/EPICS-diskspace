@@ -1,0 +1,33 @@
+record(ai, "$(P)CS:PERCENT_FREE")
+{
+	field(DTYP, "PercentFree")
+	field(SCAN, "10 second")
+	field(PINI, "Yes")
+    field(PREC, "2")
+    field(HOPR, "100")
+    field(LOPR, "0")
+    field(DESC, "Percent disk space free")
+	field(LOLO, "1")
+	field(LOW, "5")
+	field(EGU, "%")
+}
+record(ai, "$(P)CS:FREE_GB")
+{
+	field(DTYP, "PercentFree")
+	field(SCAN, "10 second")
+	field(PINI, "Yes")
+    field(PREC, "2")
+    field(DESC, "Free space in Gb")
+	field(LOLO, "1")
+	field(LOW, "5")
+	field(EGU, "Gb")
+}
+record(ai, "$(P)CS:SIZE_GB")
+{
+	field(DTYP, "PercentFree")
+	field(SCAN, "10 second")
+	field(PINI, "Yes")
+    field(PREC, "2")
+    field(DESC, "Size in Gb")
+	field(EGU, "Gb")
+}
