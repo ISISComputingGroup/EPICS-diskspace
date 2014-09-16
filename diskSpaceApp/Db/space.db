@@ -20,7 +20,7 @@ record(ai, "$(P)CS:FREE_GB")
     field(DESC, "Free space in Gb")
 	field(LOLO, "1")
 	field(LOW, "5")
-	field(EGU, "Gb")
+	field(EGU, "Gbyte")
 }
 record(ai, "$(P)CS:SIZE_GB")
 {
@@ -29,5 +29,5 @@ record(ai, "$(P)CS:SIZE_GB")
 	field(PINI, "Yes")
     field(PREC, "2")
     field(DESC, "Size in Gb")
-	field(EGU, "Gb")
+	field(EGU, "Gbyte")
 }
