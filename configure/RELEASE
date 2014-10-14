@@ -32,6 +32,7 @@ EPICS_BASE=C:/Instrument/Apps/EPICS/base/3-14-12-2
 #RULES=/path/to/epics/support/module/rules/x-y
 
 ## ISIS standard modules ##
+ASYN=$(SUPPORT)/asyn/4-22
 ICPCONFIG=$(SUPPORT)/icpconfig
 PVDUMP=$(SUPPORT)/pvdump
 DEVIOCSTATS=$(SUPPORT)/devIocStats/3-1-11
@@ -41,6 +42,7 @@ CAPUTLOG=$(SUPPORT)/caPutLog/3-3-3
 SQLITE=$(SUPPORT)/sqlite
 UTILITIES=$(SUPPORT)/utilities
 ZLIB=$(SUPPORT)/zlib/1-2-8
+ONCRPC=$(SUPPORT)/oncrpc/2
 
 ## add other modules here ##
 

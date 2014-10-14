@@ -1,1 +1,5 @@
-device(ai,CONSTANT,devAiFree,"PercentFree")
+include "base.dbd"
+include "asyn.dbd"
+#include "asubFunctions.dbd"
+registrar(diskSpaceRegister)
+#device(ai,CONSTANT,devAiFree,"PercentFree")

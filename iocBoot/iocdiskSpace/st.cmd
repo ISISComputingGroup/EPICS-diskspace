@@ -23,9 +23,10 @@ diskSpace_registerRecordDeviceDriver pdbbase
 < $(IOCSTARTUP)/dbload.cmd
 
 ## Load our record instances
-dbLoadRecords("db/space.db","P=NDW1298:sjb99183:")
+dbLoadRecords("db/space.db","P=NDW1298:sjb99183:,D=DISK_C")
 
 epicsEnvSet "PATH_TO_CHECK" "C:\"
+diskSpaceConfigure("DISK_C","C:")
 
 ##ISIS## Stuff that needs to be done after all records are loaded but before iocInit is called 
 < $(IOCSTARTUP)/preiocinit.cmd

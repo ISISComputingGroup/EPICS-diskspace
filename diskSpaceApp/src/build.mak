@@ -11,7 +11,8 @@ include $(TOP)/configure/CONFIG
 # Build the IOC application diskSpace
 # We actually use $(APPNAME) below so this file can be included by multiple IOCs
 
-PROD_IOC = $(APPNAME)
+#PROD_IOC = $(APPNAME)
+LIBRARY_IOC = $(APPNAME)
 # diskSpace.dbd will be created and installed
 DBD += $(APPNAME).dbd
 
@@ -37,6 +38,7 @@ $(APPNAME)_LIBS += caPutLog
 $(APPNAME)_LIBS += icpconfig
 $(APPNAME)_LIBS += autosave
 $(APPNAME)_LIBS += utilities
+$(APPNAME)_LIBS += asyn
 ## Add other libraries here ##
 #$(APPNAME)_LIBS += xxx
 
@@ -44,7 +46,7 @@ $(APPNAME)_LIBS += utilities
 $(APPNAME)_SRCS += $(APPNAME)_registerRecordDeviceDriver.cpp
 
 $(APPNAME)_SRCS += space.cpp
-$(APPNAME)_SRCS += freeSpace.c
+#$(APPNAME)_SRCS += freeSpace.c
 
 # Build the main IOC entry point on workstation OSs.
 $(APPNAME)_SRCS_DEFAULT += $(APPNAME)Main.cpp
