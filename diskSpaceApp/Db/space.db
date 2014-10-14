@@ -39,7 +39,7 @@ record(ao, "$(P)CS:UPDATE_TIME")
 	field(DTYP, "asynFloat64")
     field(PREC, "2")
     field(DESC, "Refresh rate")
-	field(EGU, "sec")
+	field(EGU, "s")
     info(INTEREST, "HIGH")
 	field(OUT,"@asyn($(D),0,0)UPDATE_TIME")
 }
